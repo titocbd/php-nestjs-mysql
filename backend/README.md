@@ -35,26 +35,32 @@ You can try it out yourself by cloning the repository and following the instruct
 
 ```bash
 git clone https://github.com/titocbd/microservice-react-nestjs-at-gcp.git
-cd microservice-react-nestjs-at-gcp/backend
+
 ```
 
 ## Installation
 
+Node.js v18.x:
 ```bash
-$ npm install
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+
+cd microservice-react-nestjs-at-gcp/backend
+
+npm install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+npm run start
 
 # watch mode
-$ npm run start:dev
+npm run start:dev
 
 # production mode
-$ npm run start:prod
+npm run start:prod
 ```
 
 ## Running app using pm2
@@ -82,13 +88,13 @@ pm2 delete 0
 
 ```bash
 # unit tests
-$ npm run test
+npm run test
 
 # e2e tests
-$ npm run test:e2e
+npm run test:e2e
 
 # test coverage
-$ npm run test:cov
+npm run test:cov
 ```
 
 ## Support
