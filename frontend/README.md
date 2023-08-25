@@ -1,26 +1,20 @@
-## Requirements
-To use PHP runtime library requires:
+# Deploy at GCP - Frontend Service using PHP :D
 
-PHP package: PHP 7.x or 8.0
+## Requirements
+To run the frontend service we install PHP & Apache following steps:
+
+PHP package: PHP 7.x plus
 
 
 ## Installation
 Step 1: Update system repositories
-# sudo apt update
+### sudo apt update
 
-Step 2: Install required dependencies
-# sudo apt install lsb-release ca-certificates apt-transport-https software-properties-common -y
+Step 2: Install Apache2
+### sudo apt install apache2 -y
 
-Step 3: Set up PHP repository
-#  sudo add-apt-repository ppa:ondrej/php
+Step 3: Install PHP and php-curl Extensions
+### sudo apt install php php-curl -y
 
-To continue reading the prompt, please hit the "Enter" button:
-
-Step 4: Install PHP 8 on Ubuntu 22.04
-# sudo apt install php8.0 -y
-
-Step 5: Verify PHP version
-# php -v
-
-Step 6: Install PHP 8 Extensions
-# sudo apt install php8.0-cli php8.0-common php8.0-imap php8.0-redis php8.0-xml php8.0-zip php8.0-mbstring php8.0-curl
+Step 4: Verify PHP version
+### php -v

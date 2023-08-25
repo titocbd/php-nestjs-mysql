@@ -17,14 +17,16 @@ FLUSH PRIVILEGES;
 ```
 After that ALLOW host to outside - 
 
+```bash
 sudo vim /etc/mysql/my.cnf
 
+[mysqld]
 bind-address = 0.0.0.0
 
 sudo systemctl restart mariadb
 
 netstat -ant | grep 3306
-
+```
 
 ## DB Command
 
@@ -38,6 +40,7 @@ CREATE DATABASE `restdb`CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 Then Create Table:
 ```bash
+USE restdb;
 
 CREATE TABLE `users` (
   `id` int NOT NULL AUTO_INCREMENT,
